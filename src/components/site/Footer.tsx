@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from "lucide-react";
 import logoAsset from "@/assets/dmsa-logo.jpeg.asset.json";
+import { SOCIAL_LINKS } from "@/lib/social";
 const logo = logoAsset.url;
 
 export function Footer() {
@@ -19,15 +20,15 @@ export function Footer() {
             Dreams to Victory — Dream. Goal. Achievement. Inspiring every sportsperson to achieve more since 2021.
           </p>
           <div className="mt-6 flex gap-3">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook"
+            <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noreferrer" aria-label="Facebook"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-colors hover:bg-flame hover:border-flame">
               <Facebook size={18} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"
+            <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noreferrer" aria-label="Instagram"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-colors hover:bg-flame hover:border-flame">
               <Instagram size={18} />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"
+            <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noreferrer" aria-label="YouTube"
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 transition-colors hover:bg-flame hover:border-flame">
               <Youtube size={18} />
             </a>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Send } from "lucide-react";
 import { toast } from "sonner";
+import { SOCIAL_LINKS } from "@/lib/social";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -91,9 +92,9 @@ function Contact() {
               <h3 className="font-display text-lg uppercase text-flame">Follow Us</h3>
               <p className="mt-1 text-sm text-white/70">Daily inspiration, results and updates.</p>
               <div className="mt-4 flex gap-3">
-                <Social icon={Facebook} href="https://facebook.com" label="Facebook" />
-                <Social icon={Instagram} href="https://instagram.com" label="Instagram" />
-                <Social icon={Youtube} href="https://youtube.com" label="YouTube" />
+                <Social icon={Facebook} href={SOCIAL_LINKS.facebook} label="Facebook" />
+                <Social icon={Instagram} href={SOCIAL_LINKS.instagram} label="Instagram" />
+                <Social icon={Youtube} href={SOCIAL_LINKS.youtube} label="YouTube" />
               </div>
             </div>
           </aside>
