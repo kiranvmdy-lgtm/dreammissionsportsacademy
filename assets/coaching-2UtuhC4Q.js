@@ -1,0 +1,1 @@
+var e=`/assets/coaching-C-yfcIJy.jpg`;export{e as t};
