@@ -34,9 +34,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build site
-        run: |
-          npm run build
+      - - name: Build site
+  run: |
+    npm run build
+    echo "===== WEBSITE FILES ====="
+    find .output/public -maxdepth 2 -type f -print
+    echo "===== CHECK INDEX ====="
+    test -f .output/public/index.html
           
 
       - name: Setup Pages
