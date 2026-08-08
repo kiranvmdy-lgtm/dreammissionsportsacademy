@@ -1,9 +1,17 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 
 export default defineConfig({
-  tanstackStart: {
-    prerender: {
-      enabled: false,
+  plugins: [react()],
+  base: "/dreammissionsportsacademy/",
+  build: {
+    outDir: ".output/public",
+    emptyOutDir: true,
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 });
