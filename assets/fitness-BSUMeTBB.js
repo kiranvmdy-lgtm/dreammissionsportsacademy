@@ -1,0 +1,1 @@
+import{u as e}from"./SiteLayout-D_gj3G6T.js";var t=e(`arrow-right`,[[`path`,{d:`M5 12h14`,key:`1ays0h`}],[`path`,{d:`m12 5 7 7-7 7`,key:`xquz4c`}]]),n=`/assets/hero-athletes-BVcbnypx.jpg`,r=`/assets/equipment-3Q65Dwym.jpg`,i=`/assets/events-CWIZW--8.jpg`,a=`/assets/fitness-DJSCI3di.jpg`;export{t as a,n as i,i as n,r,a as t};
