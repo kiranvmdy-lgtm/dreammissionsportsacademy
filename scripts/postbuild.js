@@ -77,6 +77,16 @@ try {
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.$_TSR = {
+        h: function() { this.hydrated = true; this.c(); },
+        e: function() { this.streamEnded = true; this.c(); },
+        c: function() { if (this.hydrated && this.streamEnded) { delete window.$_TSR; if (window.$R) delete window.$R['tsr']; } },
+        p: function(script) { !this.initialized ? this.buffer.push(script) : script(); },
+        buffer: [],
+        router: { matches: [] }
+      };
+    </script>
     ${jsFile ? `<script type="module" src="/assets/${jsFile}"></script>` : ""}
   </body>
 </html>`;

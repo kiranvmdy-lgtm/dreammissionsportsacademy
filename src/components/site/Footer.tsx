@@ -1,8 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Youtube, Phone, Mail, MapPin } from "lucide-react";
-import logoAsset from "@/assets/dmsa-logo.jpeg.asset.json";
+import logo from "@/assets/logo.png";
 import { SOCIAL_LINKS } from "@/lib/social";
-const logo = logoAsset.url;
 
 export function Footer() {
   return (
